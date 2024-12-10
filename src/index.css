@@ -1,0 +1,187 @@
+/* Aplicar Fira Sans como fuente principal */
+  body {
+    font-family: 'Fira Sans', sans-serif;  /* Cambiado a Fira Sans */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+  }
+  /* Estilo para los placeholders */
+  input::placeholder, textarea::placeholder {
+    font-family: 'Fira Sans', sans-serif; /* Fira Sans */
+    font-size: 16px;
+    color: #999; 
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  body {
+    font-family: 'Fira Sans', sans-serif;
+  }
+  
+  h4 {
+    text-align: center;
+    color: #4f4e4e;
+    font-weight: 400; /* Ajusta el peso de la fuente */
+    opacity: 0; /* Inicialmente el texto está invisible */
+    animation: fadeIn 2s ease-out forwards; /* Aplicamos la animación */
+  }
+  
+  /* Definición de la animación fadeIn */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* Comienza invisible */
+    }
+    100% {
+      opacity: 1; /* Termina completamente visible */
+    }
+  }
+  
+  
+  h1 {
+    text-align: center;
+    color: #4f4e4e;
+    font-size: 32px;
+    margin-bottom: 20px;
+    opacity: 0; /* Inicialmente el texto está invisible */
+    animation: fadeIn 1s ease-out forwards; /* Aplicamos la animación */
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fafafa;
+  }
+
+  input[type="submit"] {
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #555;
+    flex-wrap: wrap; /* Permitirá que los elementos se ajusten en pantallas pequeñas */
+  }
+
+  .contact-info div {
+    width: 45%; /* 45% de ancho en pantallas grandes */
+    margin-bottom: 20px; /* Agrega espacio entre los elementos */
+  }
+
+  .contact-info i {
+    margin-right: 8px;
+    color: #4CAF50;
+  }
+
+  .contact-info a {
+    text-decoration: none;
+    color: #4CAF50;
+    transition: color 0.3s ease;
+  }
+
+  .contact-info a:hover {
+    color: #45a049;
+  }
+
+  /* Media Queries para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info div {
+        width: 100%; /* 100% de ancho en pantallas pequeñas */
+        text-align: center; /* Centra el contenido */
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+  }
+
+
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    font-size: 16px;
+    color: #333;
+    background-color: #fafafa;
+  }
+  
+
+  input[type="submit"] {
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Añadido transition para la animación */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+    transform: scale(1.02); /* Hace que el botón crezca un % */
+  }
+  
+  
